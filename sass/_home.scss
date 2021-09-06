@@ -1,0 +1,439 @@
+// Container 
+.container {
+    width: 100%;
+    background-image: url(../images/woods1.jpg),
+    linear-gradient(to right bottom, rgba($color-primary-dark, 1), rgba($color-primary, 1));
+    background-size: cover;
+    background-blend-mode:soft-light;
+    background-attachment: fixed;
+}
+
+// Header
+.header {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    @media screen and (max-width: 1000px) {
+        height: 50vh;
+    }
+
+    @media screen and (max-width: 650px) {
+        height: 45vh;
+    }
+
+    @media screen and (max-width: 460px) {
+        height: 40vh;
+    }
+
+    &__content-wrapper {
+        text-align: center;
+        color: $color-white;
+        text-shadow: 0 1rem 2rem rgba($color-black, .2);
+    }
+
+    &__heading {
+        font-family: $font-secondary;
+        text-transform: uppercase;
+        font-size: 6rem;
+        letter-spacing: 2px;
+        color: rgba($color-white, .9);
+
+        @media screen and (max-width: 850px) {
+            font-size: 5rem;
+        }
+
+        @media screen and (max-width: 650px) {
+            font-size: 4rem;
+        }
+
+        @media screen and (max-width: 460px) {
+            font-size: 3rem;
+        }
+
+        &--italic {
+            font-style: italic;
+        }
+    }
+
+    &__tagline {
+        font-family: $font-primary;
+        font-weight: 200;
+        font-size: 4rem;
+
+        @media screen and (max-width: 850px) {
+            font-size: 3.5rem;
+        }
+
+        @media screen and (max-width: 650px) {
+            font-size: 3rem;
+        }
+
+        @media screen and (max-width: 460px) {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+// CTA section
+
+.cta {
+    width: 100%;
+    padding: 15rem 0;
+    background-color: $color-white;
+
+    @media screen and (max-width: 1200px) {
+        padding: 0;
+    }
+
+    &__wrapper {
+        max-width: $max-width;
+        background-color: #FFF;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10rem 2rem 5rem 2rem;
+        box-shadow: $shadow;
+        border-radius: .5rem;
+
+        @media screen and (max-width: 1200px) {
+            padding: 10rem 2rem 15rem 2rem;
+        }
+
+        @media screen and (max-width: 1000px) {
+            padding: 5rem 2rem 10rem 2rem;
+        }
+
+        @media screen and (max-width: 400px) {
+            padding: 4rem 2rem 6rem 2rem;
+        }
+    }
+
+    &__heading {
+        font-family: $font-secondary;
+        color: $color-secondary-dark;
+        font-size: 4rem;
+        letter-spacing: 1px;
+        text-align: center;
+        text-shadow: 0 .5rem 1rem rgba($color-black, .2);
+        margin-bottom: 3rem;
+    }
+
+    &__video {
+        margin: 0 auto;
+        border-radius: .5rem;
+        margin-bottom: 5rem;
+        width: 100%;
+        min-height: 60rem;
+
+        @media screen and (max-width: 800px) {
+            min-height: 30rem;
+        }
+
+        @media screen and (max-width: 350px) {
+            min-height: 20rem;
+        }
+    }
+
+    &__list {
+        background-color: lighten($color-secondary-dark, 37);
+        margin-bottom: 5rem;
+        max-width: 80rem;
+        padding: 0 5rem;
+        border: 3px solid $color-secondary;
+        font-size: 1.8rem;
+        box-shadow: 0 1rem 2rem rgba($color-secondary-dark, .1);
+    }
+
+    &__item {
+        padding: 2rem;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid $color-grey;
+        }
+    }
+
+    &__videoserie-video {
+        width: 40rem;
+        height: 25rem;
+        background-size: cover;
+        margin: 3rem 0;
+
+        &-heading {
+            padding: 1rem;
+            color: lighten($color-secondary, 10);
+            letter-spacing: 1px;
+            font-family: $font-secondary;
+            font-size: 3.5rem;
+            text-shadow: 0 .5rem 1rem rgba($color-black, .2);
+        }
+
+        &-description {
+            display: block;
+            margin-top: 10rem;
+            background-color: rgba($color-white, .7);
+            font-size: 2rem;
+            text-align: center;
+            padding: .5rem;
+        }
+    }
+
+    .video-1 {
+        background-image: url(../images/video1.png);
+    }
+
+    .video-2 {
+        background-image: url(../images/video2.png);
+    }
+
+    .video-3 {
+        background-image: url(../images/video3.png);
+    }
+}
+
+//Form
+
+.form {
+    padding: 25rem 0;
+    background-image: url(../images/woods1.jpg),
+    linear-gradient(to right bottom, rgba($color-primary-dark, 1), rgba($color-primary, 1));
+    background-size: cover;
+    background-blend-mode:soft-light;
+    background-attachment: fixed;
+
+    @media screen and (max-width: 1000px) {
+        padding: 15rem 0rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 10rem 0rem;
+    }
+
+    &__wrapper {
+        max-width: 50rem;
+        margin: 0 auto;
+        background-color: rgba($color-white, .9);
+        padding: 3rem;
+        border-radius: .5rem;
+        box-shadow: $shadow;
+
+        @media screen and (max-width: 415px) {
+            border-radius: 0;
+        }
+    }
+
+    &__heading {
+        font-family: $font-secondary;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 6rem;
+        letter-spacing: 2px;
+        color: rgba($color-white, .9);
+        margin-bottom: 5rem;
+        text-shadow: 0 .5rem 1rem rgba($color-black, .2);
+
+        @media screen and (max-width: 800px) {
+            font-size: 4.5rem;
+        }
+
+        @media screen and (max-width: 500px) {
+            font-size: 3.3rem;
+        }
+    }
+
+    &__input {
+        font-family: inherit;
+        font-size: 1.5rem;
+        color: inherit;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba($color-white, .5);
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 100%;
+        display: block;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
+            border-bottom: 3px solid $color-primary;
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid $color-secondary-dark;
+        }
+    }
+
+    & input[type="submit"] {
+        margin: 3rem auto;
+        display: block;
+        -webkit-appearance: none;
+    }
+
+    & p {
+        font-size: 1.1rem;
+    }
+
+    & a {
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: $color-secondary-dark;
+
+        &:hover {
+            color: $color-grey-dark;
+        }
+    }
+}
+
+//Videoserie
+.videoserie {
+    background-color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15rem 0;
+
+    @media screen and (max-width: 900px) {
+        padding: 0;
+    }
+    
+    &__wrapper {
+        padding: 5rem 2rem;
+        max-width: $max-width;
+        width: 100%;
+        border-radius: .5rem;
+        box-shadow: $shadow;
+        background-color: #FFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 900px) {
+            padding: 10rem 2rem;
+        }
+
+        @media screen and (max-width: 400px) {
+            padding: 6rem 2rem;
+        }
+    }
+
+    &__list {
+        width: 80%;
+    }
+
+    &__item {
+        padding: 1.5rem;
+        border-bottom: 1px solid $color-grey-light;
+
+        &:first-child {
+            border-top: 1px solid $color-grey-light;
+        }
+    }
+
+    &__text {
+        padding: 3rem 0;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+
+// Markus 
+
+.markus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15rem 0;
+
+    @media screen and (max-width: 800px) {
+        padding: 0;
+    }
+
+    &__wrapper {
+        background-color: rgba(#FFF, .9);
+        max-width: $max-width;
+        display: flex;
+        border-radius: .5rem;
+        overflow: hidden;
+        box-shadow: $shadow;
+
+        @media screen and (max-width: 1100px) {
+            flex-direction: column;
+            border-radius: 0;
+        }
+    }
+
+    &__text-content {
+        padding: 8rem 5rem;
+
+        @media screen and (max-width: 1000px) {
+            padding: 5rem 2rem;
+        }
+    }
+
+    &__photo {
+        background-image: url(../images/image2.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+
+        @media screen and (max-width: 1000px) {
+            height: 60vh;
+            order: -1;
+        }
+
+        @media screen and (max-width: 800px) {
+            height: 50vh;
+            order: -1;
+        }
+
+        @media screen and (max-width: 800px) {
+            height: 40vh;
+            order: -1;
+        }
+    }
+
+    &__list {
+        width: 100%;
+        font-weight: 300;
+        padding: 0 3rem;
+    }
+
+    &__item {
+        padding: 1.5rem;
+        border-bottom: 1px solid $color-grey;
+
+        &:first-child {
+            border-top: 1px solid $color-grey;
+        }
+    }
+}
+
+// Footer
+.footer {
+    text-align: center;
+    width: 100%;
+    padding: 3rem;
+    background-color: rgba($color-primary-dark, .5);
+
+    &__copyright {
+        color: $color-white;
+        font-size: 1.5rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        @media screen and (max-width: 600px) {
+            font-size: 1.2rem;
+        }
+    }
+}
